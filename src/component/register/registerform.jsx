@@ -1,4 +1,5 @@
 import React from "react";
+import "./registerform.css";
 
 function RegistrationForm() {
   return (

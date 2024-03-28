@@ -1,4 +1,5 @@
 import React from "react";
+import "./Both.css";
 import { useNavigate } from "react-router-dom";
 
 export default function Second() {

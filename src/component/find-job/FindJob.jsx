@@ -1,4 +1,5 @@
 import React from "react";
+import "./FindJob.css";
 
 const FindJob = () => {
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Both.css";
 export default function First() {
   return (
     <>

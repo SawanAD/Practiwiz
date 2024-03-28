@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="section-hor-gap py-5 mt-5">
@@ -60,7 +61,7 @@ export default function Footer() {
                       </div>
 
                       <div className="nbffg position-relative mb-3">
-                        <a href="/">
+                        <a href="/findjob">
                           <i className="fa-solid fa-angle-right"></i> Jobs
                         </a>
                       </div>
