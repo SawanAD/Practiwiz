@@ -13,6 +13,49 @@ export default function Header() {
     navigate("/login");
   };
 
+  document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector("header");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 100) {
+        // Change 100 to whatever scroll position you prefer
+        header.classList.add("headeractive");
+      } else {
+        header.classList.remove("headeractive");
+      }
+    });
+  });
+
+  const navToggle = document.querySelector("#nav-toggler");
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const navExpand = document.querySelector("#navbarSupportedContent");
+
+    navToggle.addEventListener("click", function () {
+      if (navExpand.classList.contains("navbarmenucollapse")) {
+        navExpand.classList.remove("navbarmenucollapse");
+      } else {
+        navExpand.classList.add("navbarmenucollapse");
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const barIcon = document.querySelector("#bar-icon");
+    const closeIcon = document.querySelector("#close-mark-icon");
+    const navToggle = document.querySelector("#nav-toggle");
+
+    navToggle.addEventListener("click", function () {
+      if (barIcon.classList.contains("navbar-toggler-icon")) {
+        barIcon.classList.remove("navbar-toggler-icon");
+        closeIcon.classList.remove("d-none");
+      } else {
+        barIcon.classList.add("navbar-toggler-icon");
+        closeIcon.classList.add("d-none");
+      }
+    });
+  });
+
   return (
     <>
       <link
@@ -80,7 +123,7 @@ export default function Header() {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/">
+                      <a className="nav-link" href="/findjob">
                         Jobs
                       </a>
                     </li>

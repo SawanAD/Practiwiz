@@ -8,6 +8,10 @@ import RegistrationForm from "./component/register/registerform";
 import About from "./component/AboutUs/about";
 import Login from "./component/LoginForm/login";
 import FindJob from "./component/find-job/FindJob";
+import Mentee from "./component/Mentee/Mentee";
+import ManteeDash from "./component/Menteedash/Menteedash";
+import Mentor from "./component/Mentor/Mentor";
+import SingleCousre from "./component/SingleCourse/SingleCourse";
 import { ContactUs, GoogleMap, Section7 } from "./component/Contactus/contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -45,6 +49,8 @@ const App = () => {
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
+        mouseDrag: false,
+        touchDrag: false,
         responsive: {
           0: {
             items: 1,
@@ -190,37 +196,64 @@ const App = () => {
         btn.addEventListener("click", handleSelectTab);
       });
 
-      // Section 4 designed tab pill content script
-      /* function openTab(tabName, event) {
-        var i, tabContent, tabLinks;
-        tabContent = document.getElementsByClassName("tab-content");
-        for (i = 0; i < tabContent.length; i++) {
-          tabContent[i].style.display = "none";
-        }
-        tabLinks = document.getElementsByClassName("tab");
-        for (i = 0; i < tabLinks.length; i++) {
-          tabLinks[i].classList.remove("active");
-        }
-        document.getElementById(tabName + "Content").style.display = "block";
-        event.currentTarget.classList.add("active");
-      } */
-
       // Section 5 script
-      $(document).ready(function () {
-        $(".tabs li").click(function () {
-          var tab_id = $(this).attr("data-tab");
+    $(document).ready(function () {
+      $(".tabs li").click(function () {
+        var tab_id = $(this).attr("data-tab");
 
-          $(".tabs li").removeClass("cccccsa");
-          $(".tab-contentsa").removeClass("cccccsa");
+        $(".tabs li").removeClass("cccccsa");
+        $(".tab-contentsa").removeClass("cccccsa");
 
-          $(this).addClass("cccccsa");
-          $("#" + tab_id).addClass("cccccsa");
-        });
+        $(this).addClass("cccccsa");
+        $("#" + tab_id).addClass("cccccsa");
       });
-    };
+    });
 
-    // Call the function
-    loadScripts();
+    const owl = $('.owl-carousel');
+
+    owl.on('changed.owl.carousel', () => {
+      const activeItems = document.querySelectorAll(".udguafr_slider .owl-item.active .duiehr_content");
+      activeItems.forEach((item, index) => {
+        if (index === 0 || index === activeItems.length - 1) {
+          item.style.display = "none";
+        } else {
+          item.style.display = "";
+          item.style.margin = "2rem 0 0 0";
+        }
+      });
+    });
+
+    owl.on('changed.owl.carousel', (event) => {
+      const activeIndex = event.item.index;
+      const activeItems = document.querySelectorAll(".udguafr_slider .owl-item.active");
+
+      activeItems.forEach((item, index) => {
+        const circleBox = item.querySelector('.duigher_circle');
+        if (circleBox) {
+          if (index === 0 || index === activeItems.length - 1) {
+            circleBox.style.width = "8rem";
+            circleBox.style.height = "8rem";
+            circleBox.style.transform = "translateY(3rem)";
+          } else {
+            circleBox.style.width = "9.5rem";
+            circleBox.style.height = "9.5rem";
+            circleBox.style.transform = "translateY(0)";
+          }
+        }
+      });
+    });
+
+  };
+
+  // Call the function
+  loadScripts();
+
+  // Disable mouse drag
+  // document.querySelector('.udguafr_slider').onmousedown = function(e){
+  //     e.preventDefault();
+  //     return false;
+  // };
+
   }, []);
 
   return (
@@ -232,6 +265,7 @@ const App = () => {
             path="/"
             element={
               <>
+                {" "}
                 <Header />
                 <First />
                 <Second />
@@ -244,6 +278,7 @@ const App = () => {
             path="/login"
             element={
               <>
+                {" "}
                 <Header />
                 <Login />
                 <Footer />
@@ -255,6 +290,7 @@ const App = () => {
             path="/register"
             element={
               <>
+                {" "}
                 <Header />
                 <RegistrationForm />
                 <Footer />
@@ -266,6 +302,7 @@ const App = () => {
             path="/about"
             element={
               <>
+                {" "}
                 <Header />
                 <About />
                 <Footer />
@@ -277,6 +314,7 @@ const App = () => {
             path="/contact"
             element={
               <>
+                {" "}
                 <Header />
                 <ContactUs />
                 <GoogleMap />
@@ -290,9 +328,42 @@ const App = () => {
             element={
               <>
                 {" "}
-                <Header />
-                <FindJob />
+                <Header /> <FindJob />
                 <Footer />
+              </>
+            }
+          />
+          <Route
+            exact
+            path="/mentee"
+            element={
+              <>
+                {" "}
+                <Header />
+                <Mentee />
+                <Footer />
+              </>
+            }
+          />
+          <Route exact path="/menteedash" element={<ManteeDash />} />
+          <Route
+            exact
+            path="/mentor"
+            element={
+              <>
+                {" "}
+                <Header /> <Mentor /> <Footer />
+              </>
+            }
+          />
+          <Route
+            exact
+            path="/singlecourse"
+            element={
+              <>
+                {" "}
+                <Header />
+                <SingleCousre />
               </>
             }
           />

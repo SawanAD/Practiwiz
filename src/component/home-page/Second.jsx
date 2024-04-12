@@ -4,9 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Second() {
   const navigate = useNavigate();
-  const clicked = () => {
-    navigate("/findjob");
-  };
+
   return (
     <>
       <div className="section3 section-hor-gap">
@@ -1010,7 +1008,12 @@ export default function Second() {
               </div>
             </div>
             <div className="mngjkfhg mt-4">
-              <button className="btn btn-main" onClick={clicked}>
+              <button
+                className="btn btn-main"
+                onClick={() => {
+                  navigate("/findjob");
+                }}
+              >
                 VIEW ALL JOBS <i className="fa-solid fa-circle-right" />
               </button>
             </div>
@@ -1641,7 +1644,12 @@ export default function Second() {
                               to changes in work.
                             </p>
                             <div className="dfnhjfg mt-5">
-                              <button className="ghbn btn btn-main">
+                              <button
+                                className="ghbn btn btn-main"
+                                onClick={() => {
+                                  navigate("/mentee");
+                                }}
+                              >
                                 Register{" "}
                                 <i className="fa-solid fa-angles-right" />
                               </button>
@@ -1668,7 +1676,12 @@ export default function Second() {
                               process.
                             </p>
                             <div className="dfnhjfg mt-5">
-                              <button className="ghbn btn btn-main">
+                              <button
+                                className="ghbn btn btn-main"
+                                onClick={() => {
+                                  navigate("/menteedash");
+                                }}
+                              >
                                 Register{" "}
                                 <i className="fa-solid fa-angles-right" />
                               </button>

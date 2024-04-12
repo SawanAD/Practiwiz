@@ -1,3 +1,6 @@
+/* start find a job page css*/
+/* start find a job page css*/
+/* start find a job page css*/
 .aslkhghj {
   padding: 10rem 0 5rem 0;
   background: linear-gradient(
@@ -13,16 +16,47 @@
   font-family: var(--font-family-lato);
 }
 
+.sfgrwwe_btn .select-selected {
+  color: #000000;
+  cursor: pointer;
+  text-transform: initial;
+  display: flex;
+  align-items: center;
+  color: #636363;
+}
+
+.sfgrwwe_btn .select-selected:before {
+  position: relative;
+  content: "\f161";
+  font-family: "Font Awesome 6 Free";
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  background: var(--main-orange-color);
+  display: -webkit-inline-box;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.sfgrwwe_btn .select-selected:after {
+  border-color: #000 transparent transparent transparent;
+  top: 1.2rem;
+}
+
+.sfgrwwe_btn .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 0.8rem;
+}
+
+.cfbghed i {
+  color: var(--main-orange-color);
+}
+
 .jgfgfg {
   text-align: center;
   margin-top: 30px;
 }
 .jgfgfg h2 {
   font-size: 40px;
-}
-.jgfgfg p {
-  color: gray;
-  font-size: 18px;
 }
 
 .lkrhhdfgfdfgfhf {
@@ -230,7 +264,7 @@
     position: absolute;
     left: 50px;
     top: -2px;
-    background-color: #fafafa;
+    background-color: #fff;
     border: 1px solid var(--main-orange-color);
     border-radius: 30px;
     transition: all 0.2s ease-out;
@@ -272,58 +306,59 @@
 }
 
 /*  End Toggle Switch  */
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
 
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label {
-  position: relative;
-  padding-left: 28px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 20px;
-  display: inline-block;
-  color: #666;
-}
+/*.mkdfhgjgh [type=radio]:checked,*/
+/*[type=radio]:not(:checked) {*/
+/*  position: absolute;*/
+/*  left: -9999px;*/
+/*}*/
 
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--main-orange-color);
-  border-radius: 100%;
-  background: #fff;
-}
+/*.mkdfhgjgh  [type=radio]:checked + label,*/
+/*[type=radio]:not(:checked) + label {*/
+/*  position: relative;*/
+/*  padding-left: 28px;*/
+/*  cursor: pointer;*/
+/*  font-size: 16px;*/
+/*  line-height: 20px;*/
+/*  display: inline-block;*/
+/*  color: #666;*/
+/*}*/
 
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  background: var(--main-orange-color);
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  border-radius: 100%;
-  transition: all 0.2s ease;
-}
+/*.mkdfhgjgh  [type=radio]:checked + label:before,*/
+/*[type=radio]:not(:checked) + label:before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  top: 0;*/
+/*  width: 18px;*/
+/*  height: 18px;*/
+/*  border: 1px solid var(--main-orange-color);*/
+/*  border-radius: 100%;*/
+/*  background: #fff;*/
+/*}*/
 
-[type="radio"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0);
-}
+/*.mkdfhgjgh  [type=radio]:checked + label:after,*/
+/*[type=radio]:not(:checked) + label:after {*/
+/*  content: "";*/
+/*  width: 12px;*/
+/*  height: 12px;*/
+/*  background: var(--main-orange-color);*/
+/*  position: absolute;*/
+/*  top: 4px;*/
+/*  left: 4px;*/
+/*  border-radius: 100%;*/
+/*  transition: all 0.2s ease;*/
+/*}*/
 
-[type="radio"]:checked + label:after {
-  opacity: 1;
-  transform: scale(1);
-}
+/*.mkdfhgjgh  [type=radio]:not(:checked) + label:after {*/
+/*  opacity: 0;*/
+/*  transform: scale(0);*/
+/*}*/
+
+/*.mkdfhgjgh  [type=radio]:checked + label:after {*/
+/*  opacity: 1;*/
+/*  transform: scale(1);*/
+/*}*/
 
 .csdfygtyy h5 {
   font-size: 1rem;
@@ -343,19 +378,4 @@
 .dieirherr_btn .sfgrwwe_btn {
   background: #fff !important;
   color: #636363;
-}
-
-.sfgrwwe_btn span {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: var(--main-orange-color);
-  display: inline-block;
-  position: relative;
-}
-
-.sfgrwwe_btn span i {
-  color: #fff;
-  padding-left: 7px !important;
-  padding-top: 8px;
 }

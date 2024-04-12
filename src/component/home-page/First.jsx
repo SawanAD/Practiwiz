@@ -1,6 +1,14 @@
 import React from "react";
 import "./Both.css";
 export default function First() {
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   return (
     <>
       <div
@@ -26,17 +34,16 @@ export default function First() {
                 </div>
               </div>
               <div className="col-lg-6 mb-4">
-                <div className="iduherr_right">
-                  <div className="owl-carousel udguafr_slider owl-theme">
-                    <div className="item">
-                      <div className="uihderr_slider text-center">
-                        <img
-                          className="diuh_image mb-2"
-                          src="images/idherreee.webp"
-                          alt="idherreee"
-                        />
-                        <h4 className="mb-0">Tarun Gautam</h4>
-                        <p className="duiereee mb-0">Business Analyst</p>
+              <div className="iduherr_right">
+                <div className="owl-carousel udguafr_slider owl-theme">
+                  <div className="item">
+                    <div className="uihderr_slider text-center">
+                      <div className="duigher_circle">
+                        <img className="diuh_image mb-2" src="images/durer.jpeg" />
+                      </div>
+                      <div className="duiehr_content">
+                        <h4 className="mb-0">Navya Chadha</h4>
+                        <p className="duiereee mb-0">Software Engineer Intern</p>
                         <div className="d-flex justify-content-between align-items-center">
                           <p className="mb-0">
                             <i className="fa-solid fa-star" />{" "}
@@ -46,10 +53,7 @@ export default function First() {
                             <i className="fa-solid fa-star" />
                           </p>
                           <div className="uihderr d-flex align-items-center">
-                            <img
-                              src="images/dd0ac5fa-ed3c-4843-a573-06821cfbd281.webp"
-                              alt="dd0ac5fa-ed3c-4843-a573-06821cfbd281"
-                            />
+                            <img src="images/vvvv.webp" />
                             <h6 className="mb-0">Verified</h6>
                           </div>
                         </div>
@@ -59,13 +63,13 @@ export default function First() {
                         <button className="btn btn-main mt-2">Book Now</button>
                       </div>
                     </div>
-                    <div className="item">
-                      <div className="uihderr_slider text-center">
-                        <img
-                          className="diuh_image mb-2"
-                          src="images/idherreee.webp"
-                          alt="idherreee"
-                        />
+                  </div>
+                  <div className="item">
+                    <div className="uihderr_slider text-center">
+                      <div className="duigher_circle">
+                        <img className="diuh_image mb-2" src="images/idherreee.webp" />
+                      </div>
+                      <div className="duiehr_content">
                         <h4 className="mb-0">Tarun Gautam</h4>
                         <p className="duiereee mb-0">Business Analyst</p>
                         <div className="d-flex justify-content-between align-items-center">
@@ -77,10 +81,7 @@ export default function First() {
                             <i className="fa-solid fa-star" />
                           </p>
                           <div className="uihderr d-flex align-items-center">
-                            <img
-                              src="images/dd0ac5fa-ed3c-4843-a573-06821cfbd281.webp"
-                              alt="dd0ac5fa-ed3c-4843-a573-06821cfbd281"
-                            />
+                            <img src="images/vvvv.webp" />
                             <h6 className="mb-0">Verified</h6>
                           </div>
                         </div>
@@ -90,15 +91,15 @@ export default function First() {
                         <button className="btn btn-main mt-2">Book Now</button>
                       </div>
                     </div>
-                    <div className="item">
-                      <div className="uihderr_slider text-center">
-                        <img
-                          className="diuh_image mb-2"
-                          src="images/idherreee.webp"
-                          alt="idherreee"
-                        />
-                        <h4 className="mb-0">Tarun Gautam</h4>
-                        <p className="duiereee mb-0">Business Analyst</p>
+                  </div>
+                  <div className="item">
+                    <div className="uihderr_slider text-center">
+                      <div className="duigher_circle">
+                        <img className="diuh_image mb-2" src="images/fshger.webp" />
+                      </div>
+                      <div className="duiehr_content">
+                        <h4 className="mb-0">Srinivas Rao</h4>
+                        <p className="duiereee mb-0">Senior Consultant</p>
                         <div className="d-flex justify-content-between align-items-center">
                           <p className="mb-0">
                             <i className="fa-solid fa-star" />{" "}
@@ -108,10 +109,7 @@ export default function First() {
                             <i className="fa-solid fa-star" />
                           </p>
                           <div className="uihderr d-flex align-items-center">
-                            <img
-                              src="images/dd0ac5fa-ed3c-4843-a573-06821cfbd281.webp"
-                              alt="dd0ac5fa-ed3c-4843-a573-06821cfbd281"
-                            />
+                            <img src="images/vvvv.webp" />
                             <h6 className="mb-0">Verified</h6>
                           </div>
                         </div>
@@ -121,15 +119,15 @@ export default function First() {
                         <button className="btn btn-main mt-2">Book Now</button>
                       </div>
                     </div>
-                    <div className="item">
-                      <div className="uihderr_slider text-center">
-                        <img
-                          className="diuh_image mb-2"
-                          src="images/idherreee.webp"
-                          alt="idherreee"
-                        />
-                        <h4 className="mb-0">Tarun Gautam</h4>
-                        <p className="duiereee mb-0">Business Analyst</p>
+                  </div>
+                  <div className="item">
+                    <div className="uihderr_slider text-center">
+                      <div className="duigher_circle">
+                        <img className="diuh_image mb-2" src="images/durer.jpeg" />
+                      </div>
+                      <div className="duiehr_content">
+                        <h4 className="mb-0">Navya Chadha</h4>
+                        <p className="duiereee mb-0">Software Engineer Intern</p>
                         <div className="d-flex justify-content-between align-items-center">
                           <p className="mb-0">
                             <i className="fa-solid fa-star" />{" "}
@@ -139,10 +137,7 @@ export default function First() {
                             <i className="fa-solid fa-star" />
                           </p>
                           <div className="uihderr d-flex align-items-center">
-                            <img
-                              src="images/dd0ac5fa-ed3c-4843-a573-06821cfbd281.webp"
-                              alt="dd0ac5fa-ed3c-4843-a573-06821cfbd281"
-                            />
+                            <img src="images/vvvv.webp" />
                             <h6 className="mb-0">Verified</h6>
                           </div>
                         </div>
@@ -152,13 +147,13 @@ export default function First() {
                         <button className="btn btn-main mt-2">Book Now</button>
                       </div>
                     </div>
-                    <div className="item">
-                      <div className="uihderr_slider text-center">
-                        <img
-                          className="diuh_image mb-2"
-                          src="images/idherreee.webp"
-                          alt="idherreee"
-                        />
+                  </div>
+                  <div className="item">
+                    <div className="uihderr_slider text-center">
+                      <div className="duigher_circle">
+                        <img className="diuh_image mb-2" src="images/idherreee.webp" />
+                      </div>
+                      <div className="duiehr_content">
                         <h4 className="mb-0">Tarun Gautam</h4>
                         <p className="duiereee mb-0">Business Analyst</p>
                         <div className="d-flex justify-content-between align-items-center">
@@ -170,10 +165,35 @@ export default function First() {
                             <i className="fa-solid fa-star" />
                           </p>
                           <div className="uihderr d-flex align-items-center">
-                            <img
-                              src="images/dd0ac5fa-ed3c-4843-a573-06821cfbd281.webp"
-                              alt="dd0ac5fa-ed3c-4843-a573-06821cfbd281"
-                            />
+                            <img src="images/vvvv.webp" />
+                            <h6 className="mb-0">Verified</h6>
+                          </div>
+                        </div>
+                        <h5 className="mt-3">
+                          “Top Skill Guidance To Enhance Business Growth”
+                        </h5>
+                        <button className="btn btn-main mt-2">Book Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="uihderr_slider text-center">
+                      <div className="duigher_circle">
+                        <img className="diuh_image mb-2" src="images/fshger.webp" />
+                      </div>
+                      <div className="duiehr_content">
+                        <h4 className="mb-0">Srinivas Rao</h4>
+                        <p className="duiereee mb-0">Senior Consultant</p>
+                        <div className="d-flex justify-content-between align-items-center">
+                          <p className="mb-0">
+                            <i className="fa-solid fa-star" />{" "}
+                            <i className="fa-solid fa-star" />{" "}
+                            <i className="fa-solid fa-star" />{" "}
+                            <i className="fa-solid fa-star" />{" "}
+                            <i className="fa-solid fa-star" />
+                          </p>
+                          <div className="uihderr d-flex align-items-center">
+                            <img src="images/vvvv.webp" />
                             <h6 className="mb-0">Verified</h6>
                           </div>
                         </div>
@@ -186,6 +206,8 @@ export default function First() {
                   </div>
                 </div>
               </div>
+            </div>
+
             </div>
           </div>
         </div>

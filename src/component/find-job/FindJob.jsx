@@ -2,8 +2,61 @@ import React from "react";
 import "./FindJob.css";
 
 const FindJob = () => {
+  const filterOptionbox = document.querySelector("#duygerncrttt");
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterBtn = document.querySelector("#uidgerr_text");
+
+    filterBtn.addEventListener("click", function () {
+      if (filterOptionbox.classList.contains("ugenhuhrtniu")) {
+        filterOptionbox.classList.remove("ugenhuhrtniu");
+      } else {
+        filterOptionbox.classList.add("ugenhuhrtniu");
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterClosebtn = document.querySelector("#close-filter");
+
+    filterClosebtn.addEventListener("click", function () {
+      if (filterOptionbox.classList.contains("ugenhuhrtniu")) {
+        filterOptionbox.classList.remove("ugenhuhrtniu");
+      } else {
+        filterOptionbox.classList.add("ugenhuhrtniu");
+      }
+    });
+  });
+
   return (
     <>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
       <div className="aslkhghj">
         <div className="container-fluid px-5">
           <div className="jgfgfg">
@@ -54,7 +107,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onClick="">
-                  <input type="checkbox" defaultChecked />
+                  <input type="checkbox" />
                   <span>
                     <span></span>
                     <span></span>
@@ -70,7 +123,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onclick="">
-                  <input type="checkbox" checked />
+                  <input type="checkbox" />
                   <span>
                     <span></span>
                     <span></span>
@@ -86,7 +139,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onclick="">
-                  <input type="checkbox" checked />
+                  <input type="checkbox" />
                   <span>
                     <span></span>
                     <span></span>
@@ -102,7 +155,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onclick="">
-                  <input type="checkbox" checked />
+                  <input type="checkbox" />
                   <span>
                     <span></span>
                     <span></span>
@@ -118,7 +171,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onclick="">
-                  <input type="checkbox" checked />
+                  <input type="checkbox" />
                   <span>
                     <span></span>
                     <span></span>
@@ -134,7 +187,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onclick="">
-                  <input type="checkbox" checked />
+                  <input type="checkbox" />
                   <span>
                     <span></span>
                     <span></span>
@@ -157,12 +210,7 @@ const FindJob = () => {
           <div className="klfgf">
             <form action="#">
               <p>
-                <input
-                  type="radio"
-                  id="test1"
-                  name="radio-group"
-                  defaultChecked
-                />
+                <input type="radio" id="test1" name="radio-group" default />
                 <label htmlFor="test1">All</label>
               </p>
 
@@ -212,7 +260,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onClick="">
-                  <input type="checkbox" defaultChecked />
+                  <input type="checkbox" default />
                   <span>
                     <span></span>
                     <span></span>
@@ -228,7 +276,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onClick="">
-                  <input type="checkbox" defaultChecked />
+                  <input type="checkbox" default />
                   <span>
                     <span></span>
                     <span></span>
@@ -244,7 +292,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onClick="">
-                  <input type="checkbox" defaultChecked />
+                  <input type="checkbox" default />
                   <span>
                     <span></span>
                     <span></span>
@@ -260,7 +308,7 @@ const FindJob = () => {
             <div className="gghfthghdf">
               <div className="hfghgf225">
                 <label className="toggleSwitch nolabel" onClick="">
-                  <input type="checkbox" defaultChecked />
+                  <input type="checkbox" default />
                   <span>
                     <span></span>
                     <span></span>
@@ -289,244 +337,281 @@ const FindJob = () => {
                         type="text"
                         placeholder="Job title, keywords, or company"
                       />
-                      <i className="fa-solid fa-magnifying-glass"></i>
+                      <i className="fa-solid fa-magnifying-glass" />
                     </div>
                   </div>
-
                   <div className="knjghjfggfgfghgh">
                     <div className="label2">Location</div>
                     <div className="inputWithIcon">
                       <input type="text" placeholder="City or postcode" />
-                      <i className="fa-solid fa-location-arrow"></i>
+                      <i className="fa-solid fa-location-arrow" />
                     </div>
                   </div>
-
                   <div className="knjghjfggfgfghgh">
                     <div className="label2">Category</div>
                     <div className="inputWithIcon">
                       <input type="text" placeholder="Choose a category" />
-                      <i className="fa-solid fa-bag-shopping"></i>
+                      <i className="fa-solid fa-bag-shopping" />
                     </div>
                   </div>
-
                   <div className="njghbfgfhhg">
                     <h4>Job Type</h4>
-
                     <div className="oidjaioerr">
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>Freelance</p>
                         </div>
                       </div>
-
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>Fulltime</p>
                         </div>
                       </div>
-
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>PartTime</p>
                         </div>
                       </div>
-
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>Temporary</p>
                         </div>
                       </div>
-
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>Temporary</p>
                         </div>
                       </div>
-
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>Temporary</p>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <div className="mkdfhgjgh">
+                  {/*<div class="mkdfhgjgh">*/}
+                  {/*    <h4>Date Posted</h4>*/}
+                  {/*    <div class="klfgf">*/}
+                  {/*        <form action="#">*/}
+                  {/*            <p>*/}
+                  {/*              <input type="radio" id="test1" name="radio-group"  >*/}
+                  {/*              <label for="test1">All</label>*/}
+                  {/*            </p>*/}
+                  {/*            <p>*/}
+                  {/*              <input type="radio" id="test2" name="radio-group">*/}
+                  {/*              <label for="test2">Last Posted</label>*/}
+                  {/*            </p>*/}
+                  {/*            <p>*/}
+                  {/*              <input type="radio" id="test3" name="radio-group">*/}
+                  {/*              <label for="test3">Last 24 Hour</label>*/}
+                  {/*            </p>*/}
+                  {/*            <p>*/}
+                  {/*                <input type="radio" id="test4" name="radio-group">*/}
+                  {/*                <label for="test4">Last 7 Hour</label>*/}
+                  {/*            </p>*/}
+                  {/*            <p>*/}
+                  {/*                <input type="radio" id="test5" name="radio-group">*/}
+                  {/*                <label for="test5">Last 14 Hour</label>*/}
+                  {/*            </p>*/}
+                  {/*            <p>*/}
+                  {/*                <input type="radio" id="test6" name="radio-group">*/}
+                  {/*                <label for="test6">Last 30 Hour</label>*/}
+                  {/*            </p>*/}
+                  {/*            <p>*/}
+                  {/*                <input type="radio" id="test6" name="radio-group">*/}
+                  {/*                <label for="test6">Last 30 Hour</label>*/}
+                  {/*            </p>*/}
+                  {/*            <p>*/}
+                  {/*                <input type="radio" id="test6" name="radio-group">*/}
+                  {/*                <label for="test6">Last 30 Hour</label>*/}
+                  {/*            </p>*/}
+                  {/*        </form>*/}
+                  {/*    </div>*/}
+                  {/*</div>*/}
+                  <div className="kjghfhgj">
                     <h4>Date Posted</h4>
-
                     <div className="klfgf">
-                      <form action="#">
-                        <p>
-                          <input
-                            type="radio"
-                            id="test1"
-                            name="radio-group"
-                            checked
-                          />
-                          <label for="test1">All</label>
-                        </p>
-
-                        <p>
-                          <input type="radio" id="test2" name="radio-group" />
-                          <label for="test2">Last Posted</label>
-                        </p>
-
-                        <p>
-                          <input type="radio" id="test3" name="radio-group" />
-                          <label for="test3">Last 24 Hour</label>
-                        </p>
-
-                        <p>
-                          <input type="radio" id="test4" name="radio-group" />
-                          <label for="test4">Last 7 Hour</label>
-                        </p>
-
-                        <p>
-                          <input type="radio" id="test5" name="radio-group" />
-                          <label for="test5">Last 14 Hour</label>
-                        </p>
-
-                        <p>
-                          <input type="radio" id="test6" name="radio-group" />
-                          <label for="test6">Last 30 Hour</label>
-                        </p>
-
-                        <p>
-                          <input type="radio" id="test6" name="radio-group" />
-                          <label for="test6">Last 30 Hour</label>
-                        </p>
-
-                        <p>
-                          <input type="radio" id="test6" name="radio-group" />
-                          <label for="test6">Last 30 Hour</label>
-                        </p>
-                      </form>
+                      <div className="gghfthghdf">
+                        <div className="hfghgf225">
+                          <label className="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox" />
+                            <span>
+                              <span />
+                              <span />
+                            </span>
+                            <a />
+                          </label>
+                        </div>
+                        <div className="khgjfgf">
+                          <p>All</p>
+                        </div>
+                      </div>
+                      <div className="gghfthghdf">
+                        <div className="hfghgf225">
+                          <label className="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox" />
+                            <span>
+                              <span />
+                              <span />
+                            </span>
+                            <a />
+                          </label>
+                        </div>
+                        <div className="khgjfgf">
+                          <p>Last Posted</p>
+                        </div>
+                      </div>
+                      <div className="gghfthghdf">
+                        <div className="hfghgf225">
+                          <label className="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox" />
+                            <span>
+                              <span />
+                              <span />
+                            </span>
+                            <a />
+                          </label>
+                        </div>
+                        <div className="khgjfgf">
+                          <p>Last 24 Hour</p>
+                        </div>
+                      </div>
+                      <div className="gghfthghdf">
+                        <div className="hfghgf225">
+                          <label className="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox" />
+                            <span>
+                              <span />
+                              <span />
+                            </span>
+                            <a />
+                          </label>
+                        </div>
+                        <div className="khgjfgf">
+                          <p>Last 7 Hour</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-
                   <div className="kjghfhgj">
                     <h4>Experience Level</h4>
-
                     <div className="klfgf">
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>Freshers</p>
                         </div>
                       </div>
-
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>1 Year</p>
                         </div>
                       </div>
-
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>2 Year</p>
                         </div>
                       </div>
-
                       <div className="gghfthghdf">
                         <div className="hfghgf225">
                           <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" />
                             <span>
-                              <span></span>
-                              <span></span>
+                              <span />
+                              <span />
                             </span>
+                            <a />
                           </label>
                         </div>
-
                         <div className="khgjfgf">
                           <p>Freelance</p>
                         </div>
@@ -559,8 +644,8 @@ const FindJob = () => {
 
                           <option value="3">30+ Days</option>
                         </select>
+                        <div className="select-selected">Sort By</div>
                       </div>
-
                       <button className="btn btn-main">
                         Clear All{" "}
                         <span>

@@ -1,7 +1,11 @@
 import React from "react";
 import "./registerform.css";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 function RegistrationForm() {
+  const { register, trigger } = useForm();
+  const [showIcon, setShowIcon] = useState(false);
   return (
     <main>
       <link
@@ -124,11 +128,26 @@ function RegistrationForm() {
                         First Name
                       </label>
                       <input
-                        type="email"
                         className="form-control"
                         id="exampleInputEmail2"
                         placeholder="First Name"
                         aria-describedby="emailHelp"
+                        required
+                        type="text"
+                        {...register("firstName", {
+                          required: "firstname is Required",
+                          minLength: {
+                            value: 1,
+                            message: "Must be  character at least",
+                          },
+                          pattern: {
+                            value: /\S+(?:\s+\S+)*/g,
+                            message: "Remove the space from the field",
+                          },
+                        })}
+                        onKeyUp={() => {
+                          trigger("firstName");
+                        }}
                       />
                     </div>
 
@@ -140,10 +159,26 @@ function RegistrationForm() {
                         Last Name
                       </label>
                       <input
-                        type="password"
                         className="form-control"
                         id="exampleInputPassword1"
                         placeholder="Last Name"
+                        required
+                        type="text"
+                        //onChange={(e) => setLastName(e.target.value)}
+                        {...register("lastName", {
+                          required: "last name is Required",
+                          minLength: {
+                            value: 1,
+                            message: "Must be 1 character at least",
+                          },
+                          pattern: {
+                            value: /\S+(?:\s+\S+)*/g,
+                            message: "Remove the space from the field",
+                          },
+                        })}
+                        onKeyUp={() => {
+                          trigger("lastName");
+                        }}
                       />
                     </div>
 
@@ -268,14 +303,38 @@ function RegistrationForm() {
                         Password
                       </label>
                       <input
-                        type="email"
                         className="form-control"
                         id="exampleInputEmail1"
                         placeholder="Password must be at least 8 characters"
                         aria-describedby="emailHelp"
+                        required
+                        type={showIcon ? "text" : "password"}
+                        {...register("password", {
+                          required: "Password is Required",
+                          pattern: {
+                            value:
+                              /^(?!.* )(?=.*[a-z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&.]{8,16}$/,
+                            message:
+                              "A min 8 - 16 characters contains a combination of upper, lowercase letter, number and special characters like @ $ ! % * ? & _ . without space",
+                          },
+                          maxLength: {
+                            value: 16,
+                            message: "Must be less than 16 characters.",
+                          },
+                        })}
+                        onKeyUp={() => {
+                          trigger("password");
+                        }}
                       />
 
-                      <i className="fa-solid fa-eye position-absolute"></i>
+                      <i
+                        onClick={() => setShowIcon(!showIcon)}
+                        className={
+                          showIcon
+                            ? "fa-solid fa-eye position-absolute"
+                            : "fa-solid fa-eye-slash position-absolute"
+                        }
+                      ></i>
                     </div>
 
                     <div className="csfvgdtrfs mb-3 position-relative">
